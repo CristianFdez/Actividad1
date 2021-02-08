@@ -8,7 +8,7 @@ public class Cociente {
 	 *
 	 */
 	
-	private double real1, real2, solucion; // Numeros reales. La solucion siempre ser· un double
+	private double real1, real2, solucion; // Numeros reales. La solucion siempre ser√° un double
 	private int num1, num2; // Numeros enteros
 	
 	/**
@@ -51,12 +51,62 @@ public class Cociente {
 		this.num1 = num1;
 	}
 	
-
-	// MÈtodos
 	/**
-	 * DivisiÛn de dos n˙meros reales 
-	 * Recibe 2 par·metros de entrada y 1 de salida que ser· la soluciÛn
-	 * Si el divisor es 0 devolver 000, el resultado serÌa infinito
+	 * Constructor para el inverso (solo necesita 1 parametro de entrada)
+	 * @param real1 es un numero real
+	 */
+	
+	public Cociente(double real1) {
+		super();
+		this.real1 = real1;
+	}
+
+	// Getter and setter
+	public double getReal1() {
+		return real1;
+	}
+
+	public void setReal1(double real1) {
+		this.real1 = real1;
+	}
+
+	public double getReal2() {
+		return real2;
+	}
+
+	public void setReal2(double real2) {
+		this.real2 = real2;
+	}
+
+	public double getSolucion() {
+		return solucion;
+	}
+
+	public void setSolucion(double solucion) {
+		this.solucion = solucion;
+	}
+
+	public int getNum1() {
+		return num1;
+	}
+
+	public void setNum1(int num1) {
+		this.num1 = num1;
+	}
+
+	public int getNum2() {
+		return num2;
+	}
+
+	public void setNum2(int num2) {
+		this.num2 = num2;
+	}
+
+	// M√©todos
+	/**
+	 * Divisi√≥n de dos n√∫meros reales 
+	 * Recibe 2 par√°metros de entrada y 1 de salida que ser√° la soluci√≥n
+	 * Si el divisor es 0 devolver -888, el resultado ser√≠a infinito
 	 * @return solucion
 	 */
 	public double divisionReales() {
@@ -64,43 +114,44 @@ public class Cociente {
 			solucion = real1/real2;
 			return solucion;
 		} else 
-			return 000; 
+			return -888; 
 	}
 
+	
 	/**
-	 * DivisiÛn de dos n˙meros enteros 
-	 * Recibe 2 par·metros de entrada y 1 de salida que ser· la soluciÛn
-	 * Si el divisor es 0 devolver 000, el resultado serÌa infinito
-	 * @return solucion es un double para recoger resultados que no dan un n˙mero exacto
+	 * Divisi√≥n de dos n√∫meros enteros 
+	 * Recibe 2 par√°metros de entrada y 1 de salida que ser√° la soluci√≥n
+	 * Si el divisor es 0 devolver -888, el resultado ser√≠a infinito
+	 * @return solucion es un double para recoger resultados que no dan un n√∫mero exacto
 	 */
 	public double divisionEnteros() {
 		if (num2 != 0) {
 			solucion = num1/num2;
 			return solucion;
-		} else 
-			return 000; 
+		} else
+			return -888;
 		
 	}
 	
 	/**
-	 * Inverso de un n˙mero real 
-	 * Recibe 1 par·metro de entrada y 1 de salida que ser· la soluciÛn
-	 * El inverso de 0 no existe, asi que si el numero dado es 0 dar· 000000 para marcar error
-	 * @return solucion es un double para recoger resultados que no dan un n˙mero exacto
+	 * Inverso de un n√∫mero real 
+	 * Recibe 1 par√°metro de entrada y 1 de salida que ser√° la soluci√≥n
+	 * El inverso de 0 no existe, asi que si el numero dado es 0 dar√° -888888 para marcar error
+	 * @return solucion es un double para recoger resultados que no dan un n√∫mero exacto
 	 */
 	public double inverso() {
 		if (real1 != 0) {
 			solucion = 1/real1;
 			return solucion;
 		} else 
-			return 000000;
+			return -888888;
 		
 	}
 	
 	/**
-	 * Raiz cuadrada de un n˙mero
-	 * Recibe 1 par·metro de entrada y 1 de salida que ser· la soluciÛn
-	 * @return solucion es un double para recoger resultados que no dan un n˙mero exacto
+	 * Raiz cuadrada de un n√∫mero
+	 * Recibe 1 par√°metro de entrada y 1 de salida que ser√° la soluci√≥n
+	 * @return solucion es un double para recoger resultados que no dan un n√∫mero exacto
 	 */
 	public double raiz() {
 		solucion = Math.sqrt(num1);
