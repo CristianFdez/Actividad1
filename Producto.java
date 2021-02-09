@@ -2,6 +2,9 @@
  * 
  * Clase producto calculadora actividad grupal 2
  * Encontramos diferentes métodos donde podremos realizar las operaciones solicitadas. 
+ * Casos especiales: En el caso de que los numeros para realizar la potencia sean demasiado grandes
+ * como para ser procesador saldrá por consola un aviso de error. 
+ * 
  * @see Producto
  * @version 1.0
  */
