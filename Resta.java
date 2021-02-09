@@ -8,11 +8,11 @@ public class Resta {
 	
 	/**
 	 * Declaro varios valores para hacer las operaciones de resta,
-	 * 2 valores reales y 3 enteros, y resultado como valor de la solución
+	 * 3 valores reales y 2 enteros, y resultado como valor de la solución
 	 * y acumulado para guardar el valor donde acumulo.
 	 */
-	private double a, b, resultado, acumulado;
-	private int c, d, e;
+	private double a, b, c, resultado, acumulado;
+	private int  d, e;
 	
 	/**
 	 * Declaro el constructor sin nada, vacío.
@@ -25,11 +25,11 @@ public class Resta {
 	 * Declaro el constructor con todos los valores.
 	 * @param a es un número real.
 	 * @param b es un número real.
-	 * @param c es un número entero.
+	 * @param c es un número real.
 	 * @param d es un número entero.
 	 * @param e es un número entero.
 	 */
-	public Resta(double a, double b, int c, int d, int e) {
+	public Resta(double a, double b, double c, int d, int e) {
 		super();
 		this.a = a;
 		this.b = b;
@@ -58,19 +58,19 @@ public class Resta {
 	 *  @return resultado
 	 */
 	public double restaEnteros() {
-		resultado = c - d;
+		resultado = d - e;
 		return resultado;
 	}
 
 	/**
-	 *  Método para restar tres números.
+	 *  Método para restar tres números reales.
 	 *  Recibe 3 parámetros de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería igual a la resta de los otros dos valores.
 	 *  Si uno de los datos introducido es negativo, daría error.
 	 *  @return resultado
 	 */
 	public double restaTres() {
-		resultado = c - d - e;
+		resultado = a - b - c;
 		return resultado;
 	}
 
@@ -79,10 +79,10 @@ public class Resta {
 	 *  Recibe 1 parámetro de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería 0.
 	 *  Si uno de los datos introducido es negativo, daría error.
-	 *  @return resultado
 	 */
 	public void restaAcumulado() {
 		resultado = c - c;
+		
 
 	}
 
