@@ -25,7 +25,7 @@ public class Resta {
 	 * Declaro el constructor con todos los valores.
 	 * @param a es un número real.
 	 * @param b es un número real.
-	 * @param c es un número entero.
+	 * @param c es un número real.
 	 * @param d es un número entero.
 	 * @param e es un número entero.
 	 */
@@ -58,19 +58,19 @@ public class Resta {
 	 *  @return resultado
 	 */
 	public double restaEnteros() {
-		resultado = c - d;
+		resultado = d - e;
 		return resultado;
 	}
 
 	/**
-	 *  Método para restar tres números.
+	 *  Método para restar tres números reales.
 	 *  Recibe 3 parámetros de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería igual a la resta de los otros dos valores.
 	 *  Si uno de los datos introducido es negativo, daría error.
 	 *  @return resultado
 	 */
 	public double restaTres() {
-		resultado = c - d - e;
+		resultado = a - b - c;
 		return resultado;
 	}
 
