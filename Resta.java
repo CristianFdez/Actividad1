@@ -8,11 +8,11 @@ public class Resta {
 	
 	/**
 	 * Declaro varios valores para hacer las operaciones de resta,
-	 * 2 valores reales y 3 enteros, y resultado como valor de la solución
+	 * 3 valores reales y 2 enteros, y resultado como valor de la solución
 	 * y acumulado para guardar el valor donde acumulo.
 	 */
 	private double a, b, resultado, acumulado;
-	private int c, d, e;
+	private int  c, d, e;
 	
 	/**
 	 * Declaro el constructor sin nada, vacío.
