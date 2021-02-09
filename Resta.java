@@ -79,10 +79,10 @@ public class Resta {
 	 *  Recibe 1 parámetro de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería 0.
 	 *  Si uno de los datos introducido es negativo, daría error.
-	 *  @return resultado
 	 */
 	public void restaAcumulado() {
 		resultado = c - c;
+		
 
 	}
 
