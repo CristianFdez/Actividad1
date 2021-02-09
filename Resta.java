@@ -42,6 +42,7 @@ public class Resta {
 	 *  Método para restar números reales.
 	 *  Recibe 2 parámetros de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería igual al otro valor.
+	 *  Si uno de los datos introducido es negativo, daría error.
 	 *  @return resultado
 	 */
 	public double restaReales() {
@@ -53,6 +54,7 @@ public class Resta {
 	 *  Método para restar números enteros.
 	 *  Recibe 2 parámetros de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería igual al otro valor.
+	 *  Si uno de los datos introducido es negativo, daría error.
 	 *  @return resultado
 	 */
 	public double restaEnteros() {
@@ -64,6 +66,7 @@ public class Resta {
 	 *  Método para restar tres números.
 	 *  Recibe 3 parámetros de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería igual a la resta de los otros dos valores.
+	 *  Si uno de los datos introducido es negativo, daría error.
 	 *  @return resultado
 	 */
 	public double restaTres() {
@@ -75,6 +78,7 @@ public class Resta {
 	 *  Método para restar número acumulado.
 	 *  Recibe 1 parámetro de entrada y 1 de salida que será el resultado.
 	 *  Si uno de los datos es 0, el resultado sería 0.
+	 *  Si uno de los datos introducido es negativo, daría error.
 	 *  @return resultado
 	 */
 	public void restaAcumulado() {
